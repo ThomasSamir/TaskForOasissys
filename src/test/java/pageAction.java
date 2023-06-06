@@ -86,7 +86,7 @@ public class pageAction {
         String number = hooks.GetBrowser().findElement(locate1.checkPostedData()).getText();
 
         SoftAssert softAssert = new SoftAssert();
-        softAssert.assertEquals(number, "74", "passed");
+        softAssert.assertEquals(number, "74", "Failed");
         softAssert.assertAll();
 
         hooks.QuitBrowser();
